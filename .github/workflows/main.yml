@@ -42,4 +42,5 @@ jobs:
         git add .
         git commit -m "generated"
         git lfs push origin main
+        git push
         
