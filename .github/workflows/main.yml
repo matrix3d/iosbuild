@@ -41,5 +41,5 @@ jobs:
         git config lfs.allowincompletepush true
         git add .
         git commit -m "generated"
-        git push
+        git lfs push --all
         
