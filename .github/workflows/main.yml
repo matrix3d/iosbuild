@@ -16,4 +16,11 @@ jobs:
     - name: Create local changes
       run: |
         ls -a
+        cp -avr . out
+        cd out
+        ls -a
+        rm .git
+        ls -a
+        rm .github
+        ls -a
         
