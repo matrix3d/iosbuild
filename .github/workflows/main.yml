@@ -31,6 +31,7 @@ jobs:
         repository: matrix3d/buildios
         token: ${{ secrets.API_TOKEN_GITHUB }}
     - run: |
+        cp -avr in out2
         cd out2
         echo jltttj >1.txt
         rm -rf v
