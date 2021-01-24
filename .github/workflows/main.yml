@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        path: in
     - name: Create local changes
       run: |
-        ls -a
-        cp -avr . out
+        cp -avr in out
         cd out
         ls -a
         rm .git
