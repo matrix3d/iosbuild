@@ -18,8 +18,8 @@ jobs:
     - name: Create local changes
       run: |
         cd in
-        rmdir .git
-        rmdir .github
+        rm -rf .git
+        rm -rf .github
         cd ..
         cp -avr in out
         cd out
