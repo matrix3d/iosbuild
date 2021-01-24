@@ -17,11 +17,11 @@ jobs:
         path: in
     - name: Create local changes
       run: |
+        cd in
+        rmdir .git
+        rmdir .github
+        cd ..
         cp -avr in out
         cd out
-        ls -a
-        rm .git
-        ls -a
-        rm .github
         ls -a
         
