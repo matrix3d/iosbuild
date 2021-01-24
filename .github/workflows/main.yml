@@ -32,7 +32,8 @@ jobs:
         token: ${{ secrets.API_TOKEN_GITHUB }}
     - run: |
         cd out2
-        echo jlj >1.txt
+        echo jltttj >1.txt
+        rm -rf v
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
