@@ -36,10 +36,10 @@ jobs:
         cd out2
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git lfs track "*.a"
-        git add .
-        git commit -m "lfs"
-        git push
+        #git lfs track "*.a"
+        #git add .
+        #git commit -m "lfs"
+        #git push
         echo jltttj >1.txt
         rm -rf v
         cd ..
