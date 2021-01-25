@@ -32,16 +32,19 @@ jobs:
         repository: matrix3d/buildios
         token: ${{ secrets.API_TOKEN_GITHUB }}
     - run: |
-        cp -avr in out2
         cd out2
-        echo jltttj >1.txt
-        rm -rf v
-        git config lfs.allowincompletepush true
         git config user.name github-actions
         git config user.email github-actions@github.com
         git lfs track "*.a"
         git add .
-        git commit -m "generated"
-        git lfs push origin main
+        git commit -m "lfs"
+        git push
+        echo jltttj >1.txt
+        rm -rf v
+        cd ..
+        cp -avr in out2
+        cd out2
+        git add .
+        git commit -m "push"
         git push
         
