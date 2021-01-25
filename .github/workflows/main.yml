@@ -48,5 +48,6 @@ jobs:
         cd out2
         git add .
         git commit -m "push"
+        git lfs push --all
         git push
         
