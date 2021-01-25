@@ -49,5 +49,6 @@ jobs:
         git add .
         git commit -m "push"
         git lfs push --all
+        git lfs push origin main
         git push
         
