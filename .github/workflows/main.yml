@@ -36,6 +36,7 @@ jobs:
         cd out2
         git config user.name github-actions
         git config user.email github-actions@github.com
+        git config lfs.allowincompletepush true
         #git lfs track "*.a"
         #git add .
         #git commit -m "lfs"
