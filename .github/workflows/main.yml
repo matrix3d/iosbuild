@@ -20,6 +20,7 @@ jobs:
         cd in
         rm -rf .git
         rm -rf .github
+        rm -rf .gitattributes
         cd ..
         cp -avr in out
         cd out
@@ -42,7 +43,7 @@ jobs:
         echo jltttj >1.txt
         rm -rf v
         cd ..
-        cp -avr in out2
+        cp -avr in/. out2
         cd out2
         git add .
         git commit -m "push"
